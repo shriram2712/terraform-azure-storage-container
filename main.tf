@@ -25,7 +25,7 @@ resource "azurerm_storage_account" "tfe_storage_account" {
 
 resource "azurerm_storage_container" "storage_account_container" {
 
-  name                  = var.storage_account_name
-  storage_account_name  = var.storage_account_name
+  name                  = var.storage_account_container_name
+  storage_account_name  = azurerm_storage_account.tfe_storage_account.name
   container_access_type = "private"
 }
