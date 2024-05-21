@@ -22,7 +22,7 @@ variable "resource_group_name" {
 variable "storage_account_name" {
   type        = string
   description = "Storage account name"
-  default = "test-storage-account"
+  default = "teststorageaccount"
 }
 
 variable "storage_account_container_name" {
